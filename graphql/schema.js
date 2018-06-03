@@ -1,5 +1,7 @@
 const graphql=require('graphql');
 const PaintingType=require('./PaintingType');
+const Painting=require('../models/Painting');
+
 
 const {
   GraphQLObjectType,
@@ -18,11 +20,11 @@ const RootQuery=new GraphQLObjectType({
         }
       },
       resolve(parent,args){
-
+        return Painting.findById(args.id);
       }
     }
   }
-})
+});
 
 module.exports=new GraphQLSchema({
   query:RootQuery
