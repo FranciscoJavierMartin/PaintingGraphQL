@@ -1,15 +1,15 @@
 {
   "name": "modern-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple API with GraphQL, Swagger and Hapi",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Francisco Martin",
+  "license": "MIT",
   "dependencies": {
     "apollo-server-hapi": "^1.3.6",
     "graphql": "^0.13.2",
